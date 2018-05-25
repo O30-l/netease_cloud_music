@@ -1,11 +1,25 @@
 {
-  "index.html": {
-    "href": "index.html",
-    "resources": [
-      "js/mui.min.js",
-      "css/mui.min.css"
-    ],
-    "refer": [],
-    "priority": 0
-  }
+	"index.html": {
+		"href": "index.html",
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"page/welcome.html"
+		],
+		"priority": 0
+	},
+	"page/welcome.html": {
+		"refer": [
+			"page/test.html",
+			"page/login.html"
+		]
+	},
+	"page/login.html": {
+		"refer": [
+			"page/login.html",
+			"page/forgot_password.html"
+		]
+	}
 }

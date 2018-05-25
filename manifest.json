@@ -40,6 +40,10 @@
         }
 	},
 	"plus": {
+		"statusbar": {
+			"immersed": "supportedDevice",
+    		"style":"dark"
+		},
 		"splashscreen": {
 			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
 			"waiting": true
@@ -134,6 +138,25 @@
 					"js/mui.min.js",
 					"css/mui.min.css",
 					"fonts/mui.ttf"
+				],
+				"priority": 0,
+				"refer": [
+					"page/welcome.html"
+				]
+			},
+			"page/welcome.html": {
+				"resources": [],
+				"refer": [
+					"page/test.html",
+					"page/login.html"
+				],
+				"priority": 0
+			},
+			"page/login.html": {
+				"resources": [],
+				"refer": [
+					"page/login.html",
+					"page/forgot_password.html"
 				],
 				"priority": 0
 			}
